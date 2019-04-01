@@ -1,0 +1,36 @@
+#name-title{
+ font-size: 35px;
+ font-family: "Verdana" !important, sans-serif !important;
+}
+
+
+#box2-first{
+ height:22em; 
+ padding:20px;
+}
+
+#box2-second{
+ height:26em; 
+ padding:0px;
+ margin-top: 22px;
+ float:right;
+ background-color:rgba(255, 255, 255, .3);
+}
+
+#accordion-section{
+ background-color:rgba(255, 255, 255, .3) 
+}
+
+#accordion-description{	
+
+ height:10em;
+}
+
+#copy-right{
+ height:2em; 
+ text-shadow: 0 0 3px white, 0 0 5px white;
+}
+
+#section-social{ 
+ height:2em; 
+}
