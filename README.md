@@ -1,6 +1,6 @@
 # my-website
 
-website to present portfolio 
+website to present portfolio documents
 
 
 these documents are built with basic html 
