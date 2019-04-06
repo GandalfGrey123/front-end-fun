@@ -2,32 +2,44 @@
   background:rgba(0,0,0,0);
   color: white;
   cursor: pointer;
-  padding: 18px;
+  padding: 0px;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
-  transition: 0.4s;
+  font-size: 15px;  
 }
 
 .accordion button{
-  background:rgba(0,0,0,0);
-  padding:10px;
+  background:rgba(0,0,0,0);  
+  font-size: 15px;
   border:none;
+   position: relative; 
+}
+
+.accordion button:hover{  
+  text-shadow: 0 0 10px rgb(196, 239, 200), 0 0 10px rgb(196, 239, 200) !important;
+  
+  -webkit-transition: text-shadow 0.5s;
+  -moz-transition: text-shadow 0.5s;
+  -o-transition: text-shadow 0.5s;
+  transition: text-shadow 0.5s;
 }
 
 .panel p{
-  opacity:0.9 !important; 
+  opacity:0.9 !important;
 }
 
 .panel {
   padding: 0 18px;
-  display: none;
+  width: 0%;
+  height:0%;
   color:white;
   background-color:rgba(255, 255, 255, .2);
   background-image: url("./images/SlushyGoodnaturedCoelacanth-small.gif");  
   opacity: 0.2;
   overflow: hidden;
+  visibility: hidden; 
+  transition: height 1s, width 1s, padding 1s, visibility 1s, opacity 0.5s ease-out;
 }
 

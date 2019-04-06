@@ -1,14 +1,17 @@
-
 <!DOCTYPE html>
    <head>
+     <meta charset="utf-8"> 
    	 <meta name="viewport" content="width=device-width, initial-scale=1">   	  
-   	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   	  <link rel='stylesheet' type='text/css' href='./styles/vendor/bootstrap-grid-systems.css'> 
+
+   	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   	  
+      
+      <link rel='stylesheet' type='text/css' href='./styles/vendor/bootstrap/css/bootstrap-grid-systems.css'> 
 
    	  <link rel='stylesheet' type='text/css' href='./styles/accordion.css'>
-   	  <link rel='stylesheet' type='text/css' href='./styles/icon-bar.css'>    
+   	  <link rel='stylesheet' type='text/css' href='./styles/nav-bar.css'>    
    	  <link rel='stylesheet' type='text/css' href='./styles/index-class.css'>    	
    	  <link rel='stylesheet' type='text/css' href='./styles/index-id.css'>    	
+
    	  <title>Marcus Wong</title>
    </head>
 
@@ -17,43 +20,67 @@
      <div class="container-fluid">
            
         <div class="row">
-         <div id="icon-bar" class="col-sm-12">
-     	     <div class="icon-bar">  		
-  			      <a class="icon-active" href="#">
+         <div id="nav-bar" class="col-sm-12">
+     	     <div class="nav-bar">  		
+  			      
+              <a onclick="updateView(this)" class="nav-active" href="#">
   			       <i class="fa fa-home"></i>
   			      </a>
  
-  			      <a href="#"><i class="fa fa-code"></i> code</a> 
-  			      <a href="#"><i class="fa fa-folder"></i> projects</a>
-  			      <a href="#"><i class="fa fa-envelope"></i> contact</a>   			 
-  			      <a href="#"><i class="fa fa-info-circle"></i> bio</a> 
+  			      <a onclick="updateView(this)" href="#" id="code">
+                <i class="fa fa-code"></i> code</a>
+
+  			      <a onclick="updateView(this)" href="#" id="projects">
+                <i class="fa fa-folder"></i> projects</a>
+
+  			      <a onclick="updateView(this)" href="#" id="contact">
+                <i class="fa fa-envelope"></i> contact</a>
+
+  			      <a onclick="updateView(this)" href="#" id="bio">
+                <i class="fa fa-info-circle"></i> bio</a> 
+
 		        </div>
 		     </div>
 		    </div>
 
-		    <div class="row spaced-border">
 
 
-
+    
+		  <div class="row spaced-border">
           <div id="box2-first" class="col col-sm-7 ">         
 		      </div>
 
            <div id="box2-second" class="col col-sm-5">
+
+
           </div>
 		     
-             <div id="accordion-description" class="col col-sm-7">
-         	     <div class="accordion">
-         	       <button>Read more ..</button>
-         	     </div>
-      		     <div class="panel">
-      		       <p>
-                  Hello my name is Marcus Wong, welcome to my website where you can learn more about me, my software and art projects. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                 </p>
-      		     </div>
-		        </div>	
+             <div id="accordion-section" class="col col-sm-7">               
 
-            
+                <h1>Homepage</h1>  
+                               
+                <div class="accordion"> 
+                <ol class="breadcrumb">              
+                   <button class="breadcrumb-item">/ Projects </button>
+                   <button class="breadcrumb-item">/ Code </button>
+                   <button class="breadcrumb-item">/ Contact </button>
+                </ol>                               
+                
+                </div>
+                <div class="panel">
+                
+                   <p>
+                    Hello my name is Marcus Wong, welcome to my website where you can learn more about me, my software and art projects. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+
+                </div>
+
+		        </div>	            
 		    </div>
+
+
+
+
 
 		    <div class="row">		 
              <div id="copy-right" class="col-12">  
@@ -72,11 +99,10 @@
          		    <a href="#" class="fa fa-linkedin-square"></a>       
          	     </div>
 		      </div>
-		    </div>
-
-    
+		    </div>    
 	  </div>
     <script type="text/javascript" src="./scripts/accordion.js"></script>      
+    <script type="text/javascript" src="./scripts/viewUpdate.js"></script>      
    </body>
 </html>
 
