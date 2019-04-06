@@ -1,3 +1,6 @@
 # my-website
 
-plain html documents 
+website to present portfolio 
+
+
+these documents are built with basic html 
