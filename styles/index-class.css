@@ -21,6 +21,32 @@
   color: white !important;  
 }
 
+.content-description{
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  //background-color:rgba(0, 0, 0, .4) !important;
+  opacity: 0.8;
+}
+.shrink-button{
+
+}
+
+.shrink-button {
+  float:right;
+  font-size:16px;
+  background-color: black;
+  padding: 10px;
+}
+
+.content-description-container{
+  width: 100%;
+  height:20em;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .footer{
   float:right;
   font-size:15px;
@@ -41,6 +67,4 @@
   margin-left:0%;
   margin-right:0%;
 }
-
-
 

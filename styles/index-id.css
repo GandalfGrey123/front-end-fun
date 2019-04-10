@@ -5,19 +5,19 @@
 
 
 #box2-first{
- height:16em; 
  padding:20px;
+ height:20em;
 }
 
 #box2-second{
- height:26em; 
- padding:0px;
- margin-top: 22px;
+ height:26em;
  float:right;
+
 }
 
 #accordion-section{
- height:16em;
+ height:14em;
+ width:50%;
 }
 
 #accordion-section h1{
@@ -35,5 +35,5 @@
 }
 
 #section-social{ 
- height:2em; 
+ height:10em; 
 }
