@@ -9,6 +9,9 @@ var accordionDescriptions = {
 	},
 	
 	'projects':{
+	  'web apps':" hello",
+	  'big data':" big",
+	  'current': "",
 	},	
 	
 	'contact':{
@@ -21,8 +24,8 @@ var accordionDescriptions = {
 }
 
 var accordionButtonSection = document.getElementsByClassName('accordion-buttons');
-var panel = document.getElementsByClassName('accordionPanel');
-var panelParagraph = document.getElementById('accordionDescription');
+var panel = document.getElementsByClassName('accordion-panel');
+var panelParagraph = document.getElementById('accordion-description');
 var showing = ""
 
 function loadPage(page){
@@ -33,12 +36,12 @@ function loadPage(page){
 
  	nextButton.addEventListener("click", function() {
   	if(showing == this.id){
-  	 panel[0].style.visibility = "hidden";
+  	 panel[0].style.visibility = "hidden";  	 
 	 panel[0].style.width = '0%';
 	 panel[0].style.height = '0%';	 
 	 showing = ""
   	}else{
-  	 panel[0].style.visibility = "visible";
+  	 panel[0].style.visibility = "visible";  	 
 	 panel[0].style.width = '100%';
 	 panel[0].style.height = '100%';	
   	 showing = this.id
