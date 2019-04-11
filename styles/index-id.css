@@ -4,29 +4,16 @@
 }
 
 
-#box2-first{
- padding:20px;
- height:20em;
-}
-
-#box2-second{
- height:26em;
- float:right;
-
-}
-
 #accordion-section{
- height:14em;
+ height:13em;
  width:50%;
+ 
 }
 
 #accordion-section h1{
  font-family: Arial, Helvetica, sans-serif;
- font-size:66px;
+ font-size:60px;
  opacity: 0.77;
-}
-
-#accordion-description{	
 }
 
 #copy-right{
