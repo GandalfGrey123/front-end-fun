@@ -1,0 +1,75 @@
+.accordion {
+  background:rgba(0,0,0,0);
+  color: white;
+  cursor: pointer;
+  padding: 0px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;  
+  animation: 2s ease-out 0s 1 slideInFromLeft;
+}
+.accordion h1{
+  animation: 2s ease-out 0s 1 slideInFromLeft;
+}
+
+.accordion-section{
+   animation: 2s ease-out 0s 1 slideInFromLeft;
+}
+
+
+.accordion button{
+  background:rgba(0,0,0,0);  
+  font-size: 16px;
+  border:none;
+  position: relative; 
+}
+
+.accordion button:hover{  
+  text-shadow: 0 0 10px rgb(196, 239, 200), 0 0 10px rgb(196, 239, 200) !important;  
+  -webkit-transition: text-shadow 0.5s;
+  -moz-transition: text-shadow 0.5s;
+  -o-transition: text-shadow 0.5s;
+  transition: text-shadow 0.5s;
+}
+
+.un button{
+  display: inline-block;
+}
+
+.un button:after {
+  content: '';
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: white;
+  transition: 1000ms;
+}
+
+.un button:hover:after {
+  width: 100%;
+}
+.accordion-buttons{
+  margin-left:3em;
+}
+
+.accordion-panel {
+  margin-top:1em;
+  padding: 0 18px;
+  width: 0%;
+  height:0%;
+  color:white;
+  background-color:rgba(0, 0, 0, .2) !important;  
+  opacity: 0.9;
+  overflow: hidden;
+  visibility: hidden; 
+  transition: height 1s, width 1s, padding 1s, visibility 1s, opacity 0.5s ease-out;  
+}
+
+.accordion-panel p{  
+  opacity:0.9 !important;
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%); 
+}
