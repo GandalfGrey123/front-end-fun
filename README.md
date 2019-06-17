@@ -1,4 +1,4 @@
 ### Javascript Fontend UI
 
 
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![Alt Text](https://github.com/GandalfGrey123/front-end-fun/blob/master/resources/demo-front-end-fun.gif)
